@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <form action="/api/signup" method="post">
+        <input type="text" name="name" placeholder="Введите имя">
+        <input type="text" name="surname" placeholder="Введите фамилию">
+        <input type="email" name="email" placeholder="Введите почту">
+        <input type="password" name="pasw" placeholder="Введите пароль">
+        <button type="submit">Зарегестрироваться</button>
+    </form>
+</main>
+{% endblock content %}
