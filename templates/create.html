@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accords</title>
+    <link type="text/css" rel="stylesheet" href="/static/main2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="one">
+        <form action="/api/add" method="post">
+            <h1>Создание новости</h1>
+            <div class="input-box">
+                <input name="type_news" id="typeNews" type="text" placeholder="Тип новости" required>
+            </div>
+            <div class="input-box">
+                <input name="title"" id="Heading" type="text" placeholder="Заголовок" required>
+            </div>
+            <div class="input-box">
+                <input name="date_create" id="DateCreate" type="text" placeholder="Дата создания" required>
+            </div>
+            <div class="input-box">
+                <input name="text" id="text" type="text" placeholder="Текст" required>
+            </div>
+            <div class="input-box">
+                <input name="date_public" id="Dateofplacement" type="text" placeholder="Дата размещения" required>
+            </div>
+            <div class="input-box">
+                <input name="date_archiv" id="Dateofarchive" type="text" placeholder="Дата перехода информации в архив" required>
+            </div>
+            <button type="submit" class="btn">Добавить новость</button>
+        </form>
+    </div>
+</body>
+</html>
